@@ -7,19 +7,20 @@ Useful for finding albums that aren't on Redacted yet.
 ## Examples
 
 ```
-$ echo "The Beatles - Revolver" | redmissing
+$ echo "The Beatles - Revolver" | REDACTED_API_KEY=... redmissing
 ```
 
 ```
+$ export REDACTED_API_KEY=...
 $ redmissing -i artist_albums.txt -o missing.txt
 ```
 
 ```
-$ cat artist_albums.txt | redmissing -o missing.txt
+$ cat artist_albums.txt | REDACTED_API_KEY=... redmissing -o missing.txt
 ```
 
 ```
-$ beet ls -a | redmissing > missing.txt
+$ beet ls -a | REDACTED_API_KEY=... redmissing > missing.txt
 ```
 
 ## Installation
