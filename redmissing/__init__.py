@@ -1,0 +1,1 @@
+from redmissing.search import main
